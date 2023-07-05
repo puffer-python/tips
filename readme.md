@@ -6,8 +6,8 @@ Welcome, you guys, to contribute your tips to everyone by creating a pull reques
 while read p; do   bash -c  "$p"; done < tet.ok
 ```
 ## GIT
-### Delete all local branches except master
+### Delete all local branches except a branch
 
 ```cmd
-git branch | grep -v "master" | xargs git branch -D
+git branch | grep -v "master" | grep -v "branch_1" | xargs git branch -D
 ```
