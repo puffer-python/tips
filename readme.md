@@ -5,3 +5,9 @@ Welcome, you guys, to contribute your tips to everyone by creating a pull reques
 ```cmd
 while read p; do   bash -c  "$p"; done < tet.ok
 ```
+## GIT
+### Delete all local branches except master
+
+```cmd
+git branch | grep -v "master" | xargs git branch -D
+```
